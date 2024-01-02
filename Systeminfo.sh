@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#New Changes Made
 # Get system information
 system_load=$(uptime | awk -F "load average:" '{print $2}' | cut -d, -f1 | xargs)
 process_count=$(ps -e | wc -l | xargs)
